@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mryw"
+            android:icon="@drawable/ic_dashboard"
+            android:checked="true"
+            android:title="@string/drawer_one" />
+        <item
+            android:id="@+id/nav_sujin"
+            android:icon="@drawable/ic_event"
+            android:title="@string/drawer_two" />
+        <item
+            android:id="@+id/nav_sound"
+            android:icon="@drawable/ic_headset"
+            android:title="@string/drawer_three" />
+        <item
+            android:id="@+id/nav_life"
+            android:icon="@drawable/ic_forum"
+            android:title="@string/drawer_four" />
+    </group>
+
+    <group android:title="@string/drawer_other" android:checkableBehavior="single" >
+        <menu>
+        <item
+                android:id="@+id/drawer_copyright"
+                android:icon="@drawable/ic_dashboard"
+                android:title="@string/menu_copyright" />
+            <item
+                android:id="@+id/drawer_about"
+                android:icon="@drawable/ic_forum"
+                android:title="@string/menu_about" />
+        </menu>
+    </group>
+
+</menu>

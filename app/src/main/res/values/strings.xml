@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">闻所未闻</string>
+    <string name="app_desc">“我们只看有意思的”</string>
+    <string name="version">版本号：</string>
+    <string name="versionNum">1.0</string>
+
+    <string name="checkin">Checkin</string>
+    <!--美文右上角菜单-->
+    <string name="menu_next">随机一篇</string>
+
+
+    <string name="menu_night_mode">夜间模式</string>
+    <string name="menu_night_mode_system">跟随系统</string>
+    <string name="menu_night_mode_day">日间模式</string>
+    <string name="menu_night_mode_night">夜间模式</string>
+    <string name="menu_night_mode_auto">自动</string>
+    <string name="menu_setting">设置</string>
+    <string name="drawer_other">其他</string>
+    <string name="menu_copyright">免责</string>
+    <string name="menu_about">关于</string>
+    <string name="drawer_one">美文</string>
+    <string name="drawer_two">素锦</string>
+    <string name="drawer_three">静听</string>
+    <string name="drawer_four">生活</string>
+    <string name="drawer_five">美文</string>
+    <string name="navigation_drawer_open">开启抽屉</string>
+    <string name="navigation_drawer_close">关闭抽屉</string>
+</resources>

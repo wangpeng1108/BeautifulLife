@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/list_item_margin_ver"
+    android:layout_marginLeft="@dimen/card_margin"
+    android:layout_marginRight="@dimen/card_margin"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <ImageView
+                android:id="@+id/cardback"
+                android:src="@drawable/cheese_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:lines="2"
+                android:text="标题"
+                android:textColor="@color/white"
+                android:padding="2dp"
+                android:gravity="bottom"
+                android:layout_alignParentBottom="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/author"
+                android:lines="1"
+                android:text="作者：王小波"
+                android:padding="8dp"
+                android:gravity="left"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/sounder"
+                android:lines="1"
+                android:text="主播：王安"
+                android:gravity="right"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/include_toolbar"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:src="@drawable/cheese_4"
+        android:id="@+id/authorimg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:layout_width="240dp"
+        android:layout_height="240dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray192"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            <SeekBar
+                android:id="@+id/progress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:indeterminate="false" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/goingtime"
+                    android:layout_width="wrap_content"
+                    android:text="0:13"
+                    android:textSize="22sp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:text=" / "/>
+                <TextView
+                    android:id="@+id/alltime"
+                    android:text="3:32"
+                    android:textSize="22sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/controlLayout"
+            android:baselineAligned="false">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/favor_checkbox"
+                android:id="@+id/favor"
+                android:checked="false"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:button="@null" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:id="@+id/stop"
+                android:src="@drawable/ic_stop_white_48dp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/play"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:checked="false"
+                android:background="@drawable/pause_checkbox"
+                android:button="@null" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:id="@+id/next"
+                android:src="@drawable/ic_skip_next_white_48dp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/volumn"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                android:padding="10dp"
+                android:checked="true"
+                android:background="@drawable/volumn_checkbox"
+                android:button="@null" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
