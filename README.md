@@ -1,10 +1,9 @@
-![alt text](https://raw.githubusercontent.com/chrisbanes/cheesesquare/master/art/icon.png)
 
-Cheesesquare Sample
+
+简单阅读
 ===================================
 
-Demos the new Android Design library. This is not an exhaustive sample, but shows
-some of the important features in the Design library:
+一个简单的阅读软件，主要使用jsoup爬取自每日一文网
 
 - Collapsing Toolbar
 - FloatingActionButton
